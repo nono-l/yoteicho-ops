@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #f4f0e6;
+  --color-bg-elevated: #fffdf8;
+  --color-bg-subtle: #ece6d6;
+  --color-fg: #1c1917;
+  --color-muted: #6b6458;
+  --color-subtle: #8a8578;
+  --color-primary: #3f5c4e;
+  --color-primary-fg: #f4f0e6;
+  --color-border: #d8d0be;
+  --color-danger: #8f3d32;
+  --color-ok: #2f5d45;
+  --color-warn: #8a5a2b;
+  --color-kind-post: #3f5c4e;
+  --color-kind-daily: #4a5560;
+  --color-kind-mile: #6b5344;
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --font-display: "Shippori Mincho", "Hiragino Mincho ProN", serif;
+  --font-sans: "IBM Plex Sans JP", "Hiragino Sans", sans-serif;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html {
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  body {
+    min-height: 100dvh;
+    font-family: var(--font-sans);
+    background:
+      radial-gradient(1200px 500px at 10% -10%, rgb(63 92 78 / 0.06), transparent 60%),
+      var(--color-bg);
+    color: var(--color-fg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
