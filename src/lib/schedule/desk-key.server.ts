@@ -8,7 +8,7 @@
  *   openssl rand -hex 16
  * できた32桁を DESK_KEY に入れる。作業机の番地は `/desk/（この値）` になる。
  */
-export const DESK_KEY = "88ef68b1676e682deb62059cbc3f521e";
+export const DESK_KEY = "5a03c728bcd9f9c86b5d144fe8defcda";
 
 export function isDeskKey(key: string): boolean {
   if (key.length !== DESK_KEY.length) return false;

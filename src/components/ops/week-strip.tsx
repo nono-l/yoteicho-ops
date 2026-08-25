@@ -25,7 +25,7 @@ export function WeekStrip({
                 : "border-border bg-bg-elevated",
             )}
           >
-            <span className="text-[11px] font-medium text-muted">{weekdayShort(noonIso)}</span>
+            <span className="text-xs font-medium text-muted">{weekdayShort(noonIso)}</span>
             <span className="mt-0.5 font-display text-lg leading-none tracking-tight">
               {formatDayNumber(day.key)}
             </span>

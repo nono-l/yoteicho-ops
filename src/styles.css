@@ -34,6 +34,8 @@
   html {
     background: var(--color-bg);
     color: var(--color-fg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   body {
@@ -43,6 +45,16 @@
       radial-gradient(1200px 500px at 10% -10%, rgb(63 92 78 / 0.06), transparent 60%),
       var(--color-bg);
     color: var(--color-fg);
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
   }
 }
 
